@@ -167,3 +167,7 @@ gawk -F '=' '/^export JAVA_HOME/ {print "export JAVA_HOME='$JAVA_HOME'";} !/^exp
 $HADOOP_HOME/sbin/start-dfs.sh
 $HADOOP_HOME/sbin/start-yarn.sh
 
+# Wait 10sec and then open management views:
+firefox http://127.0.0.1:50070
+firefox http://127.0.0.1:8042
+
