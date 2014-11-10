@@ -5,6 +5,12 @@ Scripts that install and configure software.
 
 Run "Essentials" scripts first, then pick which other scripts help you set up your working environment.
 
+### 4store
+
+*  `install-4store-ubuntu-14-04.sh`
+*  `install-4store-ubuntu-14-10.sh`
+*  `install-4store-xubuntu-14-10.sh`
+
 ### Apache Jena
 
 *  `install-jena-ubuntu-14-04.sh`
