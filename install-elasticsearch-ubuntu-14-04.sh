@@ -21,18 +21,27 @@ ELASTICSEARCH_VERSION=1.4.0
 
 # END OF SETTINGS SECTION
 
+# Does the source base directory exist? No? Well, create it!
+cd ~
+if [[ ! -d "$SRC_BASE" ]] ; then
+    mkdir "$SRC_BASE"
+fi
+cd "$SRC_BASE"
+
 sudo apt-get install -y wget
 
 # Download and unpack Elasticsearch:
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
-tar xzf elasticsearch-${ELASTICSEARCH_VERSION}
+tar xzf elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
 cd elasticsearch-${ELASTICSEARCH_VERSION}
 
 # Install Marvel -- management/monitoring tool:
 ./bin/plugin -i elasticsearch/marvel/latest
 
 # Start Elasticsearch:
+echo ""
+echo "!!! Firefox will open Marvel web-page in 30sec !!!"
+echo ""
+(sleep 30 ; firefox http://localhost:9200/_plugin/marvel) &
 ./bin/elasticsearch
-
-firefox http://localhost:9200/_plugin/marvel
 
