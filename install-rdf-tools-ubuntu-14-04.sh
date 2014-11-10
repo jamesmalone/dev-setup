@@ -26,13 +26,13 @@ sudo apt-get install -y wget
 sudo apt-get install -y ruby
 
 # Install rdf2json:
-#sudo gem install rdf2json
+sudo gem install rdf2json
 
 # Install Apache Any23:
-#wget http://ftp.jaist.ac.jp/pub/apache/any23/1.1/apache-any23-core-${ANY23_VERSION}.tar.gz
-#tar xzf apache-any23-core-${ANY23_VERSION}.tar.gz
+wget http://ftp.jaist.ac.jp/pub/apache/any23/1.1/apache-any23-core-${ANY23_VERSION}.tar.gz
+tar xzf apache-any23-core-${ANY23_VERSION}.tar.gz
 cd apache-any23-core-${ANY23_VERSION}
-#chmod 777 bin
+chmod 777 bin
 if [[ -f "$INSTALL_DIR/any23" ]] ; then
     sudo rm -f "$INSTALL_DIR/any23"
 fi
