@@ -5,6 +5,12 @@ Scripts that install and configure software.
 
 Run "Essentials" scripts first, then pick which other scripts help you set up your working environment.
 
+### Apache Jena
+
+*  `install-jena-ubuntu-14-04.sh`
+*  `install-jena-ubuntu-14-10.sh`
+*  `install-jena-xubuntu-14-10.sh`
+
 ### C Development
 
 *  `install-c-development-ubuntu-14-04.sh`
@@ -34,4 +40,10 @@ Run "Essentials" scripts first, then pick which other scripts help you set up yo
 *  `install-rdf-tools-ubuntu-14-04.sh`
 *  `install-rdf-tools-ubuntu-14-10.sh`
 *  `install-rdf-tools-xubuntu-14-10.sh`
+
+### Virtuoso
+
+*  `install-virtuoso-ubuntu-14-04.sh`
+*  `install-virtuoso-ubuntu-14-10.sh`
+*  `install-virtuoso-xubuntu-14-10.sh`
 
