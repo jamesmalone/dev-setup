@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Installs, configures, and starts Hadoop.
+
 set -e
 
 # START OF SETTINGS SECTION
@@ -7,7 +9,9 @@ set -e
 # Script based on: http://www.uni-koblenz-landau.de/campus-koblenz/fb4/west/teaching/ss14/data-science/HadoopLinux
 
 # Proxy settings -- leave empty if no proxy is needed:
-PROXY_HTTP=http://proxy.l2.med.tohoku.ac.jp:8080
+#
+# Example: PROXY_HTTP=http://proxy.yourcompany.com:8080
+PROXY_HTTP=
 PROXY_HTTPS=$PROXY_HTTP
 
 # Protobuf, Hadoop, etc., and data directories will go here:
