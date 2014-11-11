@@ -109,6 +109,10 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     <value>1</value>
 </property>
 <property>
+    <name>dfs.namenode.replication.min</name>
+    <value>1</value>
+</property>
+<property>
     <name>dfs.namenode.name.dir</name>
     <value>file:'$HADOOP_HOME'/data/dfs/namenode</value>
 </property>
