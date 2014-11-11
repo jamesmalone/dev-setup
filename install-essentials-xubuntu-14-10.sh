@@ -1,1 +1,1 @@
-install-ubuntu-14-04.sh
+install-essentials-ubuntu-14-04.sh
