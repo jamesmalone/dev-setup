@@ -9,3 +9,5 @@ sudo apt-get -y install git
 sudo apt-get -y install tmux
 sudo apt-get -y install htop
 sudo apt-get -y install openjdk-7-jre
+sudo apt-get -y install s3cmd
+
